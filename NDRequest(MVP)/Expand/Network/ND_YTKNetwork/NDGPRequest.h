@@ -14,7 +14,7 @@
 @property (nonatomic, strong) NSDictionary *parameters;
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, strong) NSString *requestUrl;
-@property (nonatomic, assign) YTKRequestMethod requestMethod;
+@property (nonatomic, assign) YTKRequestMethod gpRequestMethod;
 
 
 - (id)initWithOperationType:(NSString *)operationType

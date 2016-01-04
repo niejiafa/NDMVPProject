@@ -21,18 +21,14 @@
     
     NDGPRequest *request = [NDGPRequest GPRequestWithOperationType:nil parameters:parameters];
     
+    
     [[NDRequestManager sharedNDRequestManager] startRequest:request
-                                                requestType:@"versionData"
-                                                  parameter:parameters
-                                                  otherInfo:nil
-                                              successAction:^(id object, NDGPRequest *request) {
-                                                  
-                                                  
-                                              } failAction:^(NSError *error, NDGPRequest *request) {
+                                                requestName:@"versionData"
+                                              successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
+                                                
+                                              } failAction:^(NSError *error, NSString *requestName, NDGPRequest *gpRequest) {
                                                   
                                               }];
-    
-    
     
 }
 

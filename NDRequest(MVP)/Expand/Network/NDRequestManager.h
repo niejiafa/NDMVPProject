@@ -14,12 +14,10 @@
 
 + (instancetype)sharedNDRequestManager;
 
-- (void)startRequest:(NDGPRequest *)request
-         requestType:(NSString *)requestType
-           parameter:(id)parameter
-           otherInfo:(id)otherInfo
-       successAction:(void (^)(id object, NDGPRequest *request))successAction
-          failAction:(void (^)(NSError *error, NDGPRequest *request))failAction;
+- (void)startRequest:(NDGPRequest *)gpRequest
+         requestName:(NSString *)requestName
+       successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
+          failAction:(void (^)(NSError *error, NSString *requestName, NDGPRequest *gpRequest))failAction;
 
 
 @end

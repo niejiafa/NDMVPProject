@@ -1,3 +1,4 @@
+
 //
 //  NDGPRequest.m
 //  NDArchitecturePro
@@ -14,6 +15,11 @@
 
 
 #pragma mark - life cycle
+
+- (void)dealloc
+{
+    
+}
 
 - (id)initWithOperationType:(NSString *)operationType
                  parameters:(NSDictionary *)parameters
@@ -42,7 +48,7 @@
     NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType parameters:parameters];
     request.baseUrl = baseUrl;
     request.requestUrl = requestUrl;
-    self.requestMethod = requestMethod;
+    request.gpRequestMethod = requestMethod;
     return request;
     
 }
@@ -91,12 +97,16 @@
     return requestUrl;
 }
 
-- (YTKRequestMethod)requestMethod {
+- (YTKRequestMethod)requestMethod{
+    return self.gpRequestMethod;
+}
+
+- (YTKRequestMethod)gpRequestMethod{
     
-    if (_requestMethod) {
-        return _requestMethod;
+    if (_gpRequestMethod) {
+        return _gpRequestMethod;
     }
-    
+    _gpRequestMethod = YTKRequestMethodPost;
     return YTKRequestMethodPost;
 }
 

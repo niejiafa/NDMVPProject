@@ -175,7 +175,7 @@
 - (NSString *)ndSavedFileDirectory
 {
     NSString *cachesDirectory = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    cachesDirectory = [cachesDirectory stringByAppendingPathComponent:@"YZTJJYTKRequest"];
+    cachesDirectory = [cachesDirectory stringByAppendingPathComponent:@"NDRequest"];
     
     if (self.userCacheDirectory)
     {

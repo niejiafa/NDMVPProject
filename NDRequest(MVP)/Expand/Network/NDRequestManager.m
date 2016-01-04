@@ -21,29 +21,27 @@
     return requestManager;
 }
 
-- (void)startRequest:(NDGPRequest *)request_
-         requestType:(NSString *)requestType
-           parameter:(id)parameter
-           otherInfo:(id)otherInfo
-       successAction:(void (^)(id object, NDGPRequest *request))successAction
-          failAction:(void (^)(NSError *error, NDGPRequest *request))failAction
+- (void)startRequest:(NDGPRequest *)gpRequest
+         requestName:(NSString *)requestName
+       successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
+          failAction:(void (^)(NSError *error, NSString *requestName, NDGPRequest *gpRequest))failAction
 {
-    [request_ startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request)
+    [gpRequest startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request)
      {
-         id object = [request_ model];
+         id object = [gpRequest model];
          
          if (successAction)
          {
-             successAction(object, request_);
+             successAction(object, requestName, gpRequest);
          }
          
      }failure:^(YTKBaseRequest *request)
      {
-         id object = request_.requestOperation.error;
+         id object = gpRequest.requestOperation.error;
          
          if (failAction)
          {
-             failAction(object, request_);
+             failAction(object, requestName, gpRequest);
          }
      }];
     

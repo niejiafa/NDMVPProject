@@ -56,10 +56,10 @@
 		5678A2EC2DA9B4DFAA23A87F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA7BA161C34D93900472644 /* NDRequest(MVP).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NDRequest(MVP).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DA7BA1A1C34D93900472644 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7DA7BA1C1C34D93900472644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
-		7DA7BA1D1C34D93900472644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		7DA7BA1F1C34D93900472644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		7DA7BA201C34D93900472644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
+		7DA7BA1C1C34D93900472644 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7DA7BA1D1C34D93900472644 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7DA7BA1F1C34D93900472644 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7DA7BA201C34D93900472644 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7DA7BA231C34D93900472644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7DA7BA251C34D93900472644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7DA7BA281C34D93900472644 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -173,6 +173,10 @@
 		7DA7BA181C34D93900472644 /* NDRequest(MVP) */ = {
 			isa = PBXGroup;
 			children = (
+				7DA7BA1C1C34D93900472644 /* AppDelegate.h */,
+				7DA7BA1D1C34D93900472644 /* AppDelegate.m */,
+				7DA7BA1F1C34D93900472644 /* ViewController.h */,
+				7DA7BA201C34D93900472644 /* ViewController.m */,
 				7DA7BA541C34DACD00472644 /* Main */,
 				7DA7BA4C1C34DACD00472644 /* Expand */,
 				7DA7BA581C34DAE500472644 /* Vendor */,
@@ -259,10 +263,6 @@
 		7DA7BA541C34DACD00472644 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				7DA7BA1C1C34D93900472644 /* AppDelegate.h */,
-				7DA7BA1D1C34D93900472644 /* AppDelegate.m */,
-				7DA7BA1F1C34D93900472644 /* ViewController.h */,
-				7DA7BA201C34D93900472644 /* ViewController.m */,
 				7DA7BA871C34F6F500472644 /* MVPFunction */,
 			);
 			path = Main;
