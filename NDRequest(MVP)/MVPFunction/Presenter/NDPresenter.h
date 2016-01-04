@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @class NDPresenter;
+@class NDAppModel;
 
 @protocol NDPresenterDelegate <NSObject>
 
-- (void)presenter:(NDPresenter *)presenter appVersionsData:(id)versionData;
+- (void)presenter:(NDPresenter *)presenter appVersionsData:(NDAppModel *)model;
 
 @end
 

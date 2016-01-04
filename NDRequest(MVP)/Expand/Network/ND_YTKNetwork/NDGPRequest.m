@@ -83,8 +83,8 @@
     if (_baseUrl) {
         return _baseUrl;
     }
-    
     NSString *baseUrl = @"http://api.fir.im";
+    _baseUrl = baseUrl;
     return baseUrl;
 }
 
@@ -94,6 +94,7 @@
         return _requestUrl;
     }
     NSString *requestUrl = @"/apps";
+    _requestUrl = requestUrl;
     return requestUrl;
 }
 
@@ -106,7 +107,8 @@
     if (_gpRequestMethod) {
         return _gpRequestMethod;
     }
-    _gpRequestMethod = YTKRequestMethodPost;
+    YTKRequestMethod gpRequestMethod = YTKRequestMethodPost;
+    _gpRequestMethod = gpRequestMethod;
     return YTKRequestMethodPost;
 }
 

@@ -33,11 +33,6 @@
     NSInteger updateCount;
     model = [self ndOperateWithNewObject:model oldObject:self.ndCacheModel updateCount:&updateCount];
     
-    if (![self ndSuccessForBussiness:model])
-    {
-        return;
-    }
-    
     if (self.isSaveToMemory)
     {
         self.ndCacheModel = model;
@@ -158,10 +153,6 @@
     return newObject;
 }
 
-- (BOOL)ndSuccessForBussiness:(id)model
-{
-    return NO;
-}
 
 // file config
 - (NSString *)ndSavedFilePath

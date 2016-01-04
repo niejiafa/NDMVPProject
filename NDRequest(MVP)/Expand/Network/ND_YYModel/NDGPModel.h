@@ -10,4 +10,6 @@
 
 @interface NDGPModel : NDModel
 
+@property (nonatomic, copy) NSString *requestName;
+
 @end

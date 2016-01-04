@@ -10,6 +10,8 @@
 
 #import "NDGPRequest.h"
 #import "NDRequestManager.h"
+#import "NDAppModel.h"
+#import "NDAppModel.h"
 @implementation NDPresenter
 
 
@@ -20,13 +22,20 @@
     NSDictionary * parameters = [ NSDictionary dictionaryWithObjectsAndKeys:type, @"type" ,bundle_id, @"bundle_id" ,api_token, @"api_token" , nil ];
     
     NDGPRequest *request = [NDGPRequest GPRequestWithOperationType:nil parameters:parameters];
+    request.modelClass = [NDAppModel class];
     
+    __weak __typeof(self) weakSelf = self;
     
     [[NDRequestManager sharedNDRequestManager] startRequest:request
                                                 requestName:@"versionData"
                                               successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
-                                                
-                                              } failAction:^(NSError *error, NSString *requestName, NDGPRequest *gpRequest) {
+                                                  NDAppModel *model = (NDAppModel *)object;
+                                                  model.requestName = requestName;
+                                                  
+                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)]) {
+                                                      [self.delegate presenter:weakSelf appVersionsData:model];
+                                                  }
+                                              } failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   
                                               }];
     

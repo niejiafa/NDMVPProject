@@ -13,5 +13,6 @@
 @interface NDMVPViewController : UIViewController
 
 @property (nonatomic, strong) NDPresenter *presenter;
+@property (weak, nonatomic) IBOutlet UITextView *appTextView;
 
 @end

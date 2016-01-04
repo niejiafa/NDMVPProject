@@ -9,6 +9,7 @@
 #import "NDRequestManager.h"
 
 #import "NDGPRequest.h"
+#import "NDGPModel.h"
 @implementation NDRequestManager
 
 + (instancetype)sharedNDRequestManager
@@ -24,10 +25,12 @@
 - (void)startRequest:(NDGPRequest *)gpRequest
          requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
-          failAction:(void (^)(NSError *error, NSString *requestName, NDGPRequest *gpRequest))failAction
+          failAction:(void (^)(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest))failAction
 {
     [gpRequest startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request)
      {
+         NSLog(@"request.respnseString: %@",request.responseString);
+         
          id object = [gpRequest model];
          
          if (successAction)
@@ -37,11 +40,13 @@
          
      }failure:^(YTKBaseRequest *request)
      {
-         id object = gpRequest.requestOperation.error;
+         NSError *error = gpRequest.requestOperation.error;
+         
+         id object = [gpRequest model];
          
          if (failAction)
          {
-             failAction(object, requestName, gpRequest);
+             failAction(error, object, requestName, gpRequest);
          }
      }];
     

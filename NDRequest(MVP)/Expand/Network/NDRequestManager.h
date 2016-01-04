@@ -17,7 +17,7 @@
 - (void)startRequest:(NDGPRequest *)gpRequest
          requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
-          failAction:(void (^)(NSError *error, NSString *requestName, NDGPRequest *gpRequest))failAction;
+          failAction:(void (^)(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest))failAction;
 
 
 @end

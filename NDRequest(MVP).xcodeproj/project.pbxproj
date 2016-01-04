@@ -31,6 +31,9 @@
 		7DA7BA861C34DC9600472644 /* NDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA7BA851C34DC9600472644 /* NDRequestManager.m */; };
 		7DA7BA8D1C34F75200472644 /* NDMVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA7BA8C1C34F75200472644 /* NDMVPViewController.m */; };
 		7DA7BA901C34F79A00472644 /* NDPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DA7BA8F1C34F79A00472644 /* NDPresenter.m */; };
+		7DB6BD5D1C3A211C0016B094 /* NDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6BD5C1C3A211C0016B094 /* NDAppModel.m */; };
+		7DB6BD601C3A23310016B094 /* NDAppIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6BD5F1C3A23310016B094 /* NDAppIconModel.m */; };
+		7DB6BD631C3A23470016B094 /* NDAppBinaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB6BD621C3A23470016B094 /* NDAppBinaryModel.m */; };
 		C10EE5FAA951C9A301EFF4D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5678A2EC2DA9B4DFAA23A87F /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -102,6 +105,12 @@
 		7DA7BA8C1C34F75200472644 /* NDMVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDMVPViewController.m; sourceTree = "<group>"; };
 		7DA7BA8E1C34F79A00472644 /* NDPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDPresenter.h; sourceTree = "<group>"; };
 		7DA7BA8F1C34F79A00472644 /* NDPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDPresenter.m; sourceTree = "<group>"; };
+		7DB6BD5B1C3A211C0016B094 /* NDAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppModel.h; sourceTree = "<group>"; };
+		7DB6BD5C1C3A211C0016B094 /* NDAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppModel.m; sourceTree = "<group>"; };
+		7DB6BD5E1C3A23310016B094 /* NDAppIconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppIconModel.h; sourceTree = "<group>"; };
+		7DB6BD5F1C3A23310016B094 /* NDAppIconModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppIconModel.m; sourceTree = "<group>"; };
+		7DB6BD611C3A23470016B094 /* NDAppBinaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppBinaryModel.h; sourceTree = "<group>"; };
+		7DB6BD621C3A23470016B094 /* NDAppBinaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppBinaryModel.m; sourceTree = "<group>"; };
 		C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -348,20 +357,13 @@
 		7DA7BA871C34F6F500472644 /* MVPFunction */ = {
 			isa = PBXGroup;
 			children = (
-				7DA7BA881C34F73200472644 /* Model */,
+				7DB6BD5A1C3A210F0016B094 /* Model */,
 				7DA7BA891C34F73200472644 /* Presenter */,
 				7DA7BA8A1C34F73200472644 /* View */,
 			);
 			name = MVPFunction;
 			path = "NDRequest(MVP)/MVPFunction";
 			sourceTree = SOURCE_ROOT;
-		};
-		7DA7BA881C34F73200472644 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
 		};
 		7DA7BA891C34F73200472644 /* Presenter */ = {
 			isa = PBXGroup;
@@ -379,6 +381,19 @@
 				7DA7BA8C1C34F75200472644 /* NDMVPViewController.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7DB6BD5A1C3A210F0016B094 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7DB6BD5B1C3A211C0016B094 /* NDAppModel.h */,
+				7DB6BD5C1C3A211C0016B094 /* NDAppModel.m */,
+				7DB6BD5E1C3A23310016B094 /* NDAppIconModel.h */,
+				7DB6BD5F1C3A23310016B094 /* NDAppIconModel.m */,
+				7DB6BD611C3A23470016B094 /* NDAppBinaryModel.h */,
+				7DB6BD621C3A23470016B094 /* NDAppBinaryModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -564,7 +579,10 @@
 			files = (
 				7DA7BA7D1C34DC3100472644 /* NSDate+ND.m in Sources */,
 				7DA7BA801C34DC3100472644 /* NSMutableArray+ND.m in Sources */,
+				7DB6BD631C3A23470016B094 /* NDAppBinaryModel.m in Sources */,
 				7DA7BA901C34F79A00472644 /* NDPresenter.m in Sources */,
+				7DB6BD601C3A23310016B094 /* NDAppIconModel.m in Sources */,
+				7DB6BD5D1C3A211C0016B094 /* NDAppModel.m in Sources */,
 				7DA7BA651C34DBB600472644 /* NDGPModel.m in Sources */,
 				7DA7BA631C34DBB600472644 /* NDGPRequest.m in Sources */,
 				7DA7BA211C34D93900472644 /* ViewController.m in Sources */,
