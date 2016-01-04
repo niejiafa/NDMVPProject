@@ -16,11 +16,6 @@
 
 #pragma mark - life cycle
 
-- (void)dealloc
-{
-    
-}
-
 - (id)initWithOperationType:(NSString *)operationType
                  parameters:(NSDictionary *)parameters
 {

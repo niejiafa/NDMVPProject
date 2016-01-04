@@ -34,7 +34,6 @@
 - (id)ndOperateWithNewObject:(id)newObject
                        oldObject:(id)oldObject
                      updateCount:(NSInteger *)updateCount;
-- (BOOL)ndSuccessForBussiness:(id)model;
 
 // file config
 - (NSString *)ndSavedFilePath;

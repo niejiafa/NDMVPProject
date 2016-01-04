@@ -29,13 +29,16 @@
     [[NDRequestManager sharedNDRequestManager] startRequest:request
                                                 requestName:@"versionData"
                                               successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
-                                                  NDAppModel *model = (NDAppModel *)object;
-                                                  model.requestName = requestName;
-                                                  
+                                                  NDAppModel *model = (NDAppModel *)object;                                                  
                                                   if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)]) {
                                                       [self.delegate presenter:weakSelf appVersionsData:model];
                                                   }
                                               } failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
+                                                  NSLog(@"Error: %@",error);
+                                                  NDAppModel *model = (NDAppModel *)object;
+                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)]) {
+                                                      [self.delegate presenter:weakSelf appVersionsData:model];
+                                                  }
                                                   
                                               }];
     

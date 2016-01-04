@@ -10,6 +10,7 @@
 
 #import "NDGPRequest.h"
 #import "NDGPModel.h"
+
 @implementation NDRequestManager
 
 + (instancetype)sharedNDRequestManager
@@ -32,21 +33,24 @@
          NSLog(@"request.respnseString: %@",request.responseString);
          
          id object = [gpRequest model];
+         NDGPModel *model = (NDGPModel *)object;
+         model.requestName = requestName;
          
          if (successAction)
          {
-             successAction(object, requestName, gpRequest);
+             successAction(model, requestName, gpRequest);
          }
          
      }failure:^(YTKBaseRequest *request)
      {
          NSError *error = gpRequest.requestOperation.error;
-         
          id object = [gpRequest model];
+         NDGPModel *model = (NDGPModel *)object;
+         model.requestName = requestName;
          
          if (failAction)
          {
-             failAction(error, object, requestName, gpRequest);
+             failAction(error, model, requestName, gpRequest);
          }
      }];
     

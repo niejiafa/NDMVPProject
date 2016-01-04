@@ -205,6 +205,7 @@
     }
     
     NSString *filePath = [self ndSavedFilePath];
+    NSLog(@"filePath: %@",filePath);
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:filePath isDirectory:nil])
     {
