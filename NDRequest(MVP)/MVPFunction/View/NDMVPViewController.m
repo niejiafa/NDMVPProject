@@ -43,7 +43,6 @@
                              [NSString stringWithFormat:@"%@\n%@\n%@\n",model.iconModel.key, model.iconModel.token, model.iconModel.upload_url],
                              [NSString stringWithFormat:@"%@\n%@\n%@\n",model.binaryModel.key, model.binaryModel.token, model.binaryModel.upload_url]
                              ];
-    
 }
 
 #pragma mark - notification

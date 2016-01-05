@@ -11,7 +11,7 @@
 #import "NDGPRequest.h"
 #import "NDRequestManager.h"
 #import "NDAppModel.h"
-#import "NDAppModel.h"
+
 @implementation NDPresenter
 
 
@@ -30,16 +30,17 @@
                                                 requestName:@"versionData"
                                               successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NDAppModel *model = (NDAppModel *)object;                                                  
-                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)]) {
+                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
+                                                  {
                                                       [self.delegate presenter:weakSelf appVersionsData:model];
                                                   }
                                               } failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NSLog(@"Error: %@",error);
                                                   NDAppModel *model = (NDAppModel *)object;
-                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)]) {
+                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
+                                                  {
                                                       [self.delegate presenter:weakSelf appVersionsData:model];
                                                   }
-                                                  
                                               }];
     
 }
