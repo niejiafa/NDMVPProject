@@ -78,6 +78,7 @@
     if (_baseUrl) {
         return _baseUrl;
     }
+    
     NSString *baseUrl = @"http://api.fir.im";
     _baseUrl = baseUrl;
     return baseUrl;
@@ -88,6 +89,7 @@
     if (_requestUrl) {
         return _requestUrl;
     }
+    
     NSString *requestUrl = @"/apps";
     _requestUrl = requestUrl;
     return requestUrl;
