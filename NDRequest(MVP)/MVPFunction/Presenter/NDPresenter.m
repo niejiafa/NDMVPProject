@@ -24,25 +24,25 @@
     NDGPRequest *request = [NDGPRequest GPRequestWithOperationType:nil parameters:parameters];
     request.modelClass = [NDAppModel class];
     
-    __weak __typeof(self) weakSelf = self;
+    NDRequestManager *manager = [[NDRequestManager alloc] init];
     
-    [[NDRequestManager sharedNDRequestManager] startRequest:request
+    __weak __typeof(self) weakSelf = self;
+    [manager startRequest:request
                                                 requestName:@"versionData"
                                               successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NDAppModel *model = (NDAppModel *)object;                                                  
-                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
+                                                  if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
                                                   {
-                                                      [self.delegate presenter:weakSelf appVersionsData:model];
+                                                      [weakSelf.delegate presenter:weakSelf appVersionsData:model];
                                                   }
                                               } failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NSLog(@"Error: %@",error);
                                                   NDAppModel *model = (NDAppModel *)object;
-                                                  if (self.delegate && [self.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
+                                                  if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
                                                   {
-                                                      [self.delegate presenter:weakSelf appVersionsData:model];
+                                                      [weakSelf.delegate presenter:weakSelf appVersionsData:model];
                                                   }
                                               }];
-    
 }
 
 @end

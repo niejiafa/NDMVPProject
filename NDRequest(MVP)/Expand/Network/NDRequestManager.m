@@ -13,16 +13,6 @@
 
 @implementation NDRequestManager
 
-+ (instancetype)sharedNDRequestManager
-{
-    static dispatch_once_t onceToken;
-    static NDRequestManager *requestManager;
-    dispatch_once(&onceToken, ^{
-        requestManager = [[NDRequestManager alloc] init];
-    });
-    return requestManager;
-}
-
 - (void)startRequest:(NDGPRequest *)gpRequest
          requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction

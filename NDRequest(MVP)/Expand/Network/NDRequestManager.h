@@ -12,8 +12,6 @@
 
 @interface NDRequestManager : NSObject
 
-+ (instancetype)sharedNDRequestManager;
-
 - (void)startRequest:(NDGPRequest *)gpRequest
          requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
