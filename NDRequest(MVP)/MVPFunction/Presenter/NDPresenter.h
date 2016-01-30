@@ -22,7 +22,7 @@
 @property (nonatomic, weak) id<NDPresenterDelegate> delegate;
 
 /**
- *  @brief  请求app版本信息。
+ *  请求app版本信息。
  *
  *  @param  type 设备类型
  *  @param  bundle_id  Bundle identifier

@@ -14,21 +14,21 @@
 @implementation NDRequestManager
 
 - (void)startRequest:(NDGPRequest *)gpRequest
-         requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
           failAction:(void (^)(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest))failAction
 {
     [gpRequest startWithCompletionBlockWithSuccess:^(YTKBaseRequest *request)
      {
-         NSLog(@"request.respnseString: %@",request.responseString);
+         NDGPRequest *gpRequest = (NDGPRequest *)request;
          
          id object = [gpRequest model];
          NDGPModel *model = (NDGPModel *)object;
-         model.requestName = requestName;
+         
+         model.requestName = gpRequest.requestName;
          
          if (successAction)
          {
-             successAction(model, requestName, gpRequest);
+             successAction(model, gpRequest.requestName, gpRequest);
          }
          
      }failure:^(YTKBaseRequest *request)
@@ -36,11 +36,11 @@
          NSError *error = gpRequest.requestOperation.error;
          id object = [gpRequest model];
          NDGPModel *model = (NDGPModel *)object;
-         model.requestName = requestName;
+         model.requestName = gpRequest.requestName;
          
          if (failAction)
          {
-             failAction(error, model, requestName, gpRequest);
+             failAction(error, model, gpRequest.requestName, gpRequest);
          }
      }];
     

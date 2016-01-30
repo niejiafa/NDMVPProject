@@ -13,9 +13,7 @@
 @interface NDRequestManager : NSObject
 
 - (void)startRequest:(NDGPRequest *)gpRequest
-         requestName:(NSString *)requestName
        successAction:(void (^)(id object, NSString *requestName, NDGPRequest *gpRequest))successAction
           failAction:(void (^)(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest))failAction;
-
 
 @end

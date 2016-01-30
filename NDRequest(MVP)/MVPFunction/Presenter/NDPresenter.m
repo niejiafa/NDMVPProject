@@ -14,28 +14,27 @@
 
 @implementation NDPresenter
 
-
 - (void)requestAppVersionsDataWithType:(NSString *)type
                              Bundle_id:(NSString *)bundle_id
                              Api_token:(NSString *)api_token
 {
     NSDictionary * parameters = [ NSDictionary dictionaryWithObjectsAndKeys:type, @"type" ,bundle_id, @"bundle_id" ,api_token, @"api_token" , nil ];
     
-    NDGPRequest *request = [NDGPRequest GPRequestWithOperationType:nil parameters:parameters];
+    NDGPRequest *request = [NDGPRequest GPRequestWithOperationType:nil requestName:@"versionData"parameters:parameters];
     request.modelClass = [NDAppModel class];
     
     NDRequestManager *manager = [[NDRequestManager alloc] init];
     
     __weak __typeof(self) weakSelf = self;
     [manager startRequest:request
-                                                requestName:@"versionData"
-                                              successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
+            successAction:^(id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NDAppModel *model = (NDAppModel *)object;                                                  
                                                   if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(presenter:appVersionsData:)])
                                                   {
                                                       [weakSelf.delegate presenter:weakSelf appVersionsData:model];
                                                   }
-                                              } failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
+                                              }
+               failAction:^(NSError *error, id object, NSString *requestName, NDGPRequest *gpRequest) {
                                                   NSLog(@"Error: %@",error);
                                                   NDAppModel *model = (NDAppModel *)object;
                                                   if (weakSelf.delegate && [weakSelf.delegate respondsToSelector:@selector(presenter:appVersionsData:)])

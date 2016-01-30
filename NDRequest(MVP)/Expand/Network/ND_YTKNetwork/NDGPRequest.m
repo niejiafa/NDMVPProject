@@ -11,18 +11,21 @@
 
 #import "NDGPModel.h"
 #import "NDRequest.h"
+
 @implementation NDGPRequest
 
 
 #pragma mark - life cycle
 
 - (id)initWithOperationType:(NSString *)operationType
+                requestName: (NSString *)requestName
                  parameters:(NSDictionary *)parameters
 {
     self = [super init];
     if (self)
     {
         self.operationType = operationType;
+        self.requestName = requestName;
         self.parameters = parameters;
         
         self.isSaveToMemory = YES;
@@ -35,12 +38,13 @@
 }
 
 - (id)initWithOperationType:(NSString *)operationType
+                requestName: (NSString *)requestName
                  parameters:(NSDictionary *)parameters
                     baseUrl:(NSString *)baseUrl
                  requestUrl:(NSString *)requestUrl
            requestMethod:(YTKRequestMethod)requestMethod
 {
-    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType parameters:parameters];
+    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType requestName:requestName parameters:parameters];
     request.baseUrl = baseUrl;
     request.requestUrl = requestUrl;
     request.gpRequestMethod = requestMethod;
@@ -49,19 +53,21 @@
 }
 
 + (instancetype)GPRequestWithOperationType:(NSString *)operationType
+                               requestName: (NSString *)requestName
                                 parameters:(NSDictionary *)parameters
 {
-    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType parameters:parameters];
+    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType requestName:requestName parameters:parameters];
     return request;
 }
 
 + (instancetype)GPRequestWithOperationType:(NSString *)operationType
+                               requestName: (NSString *)requestName
                                 parameters:(NSDictionary *)parameters
                                    baseUrl:(NSString *)baseUrl
                                 requestUrl:(NSString *)requestUrl
                              requestMethod:(YTKRequestMethod)requestMethod;
 {
-    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType parameters:parameters baseUrl:baseUrl requestUrl:requestUrl requestMethod:requestMethod];
+    NDGPRequest *request = [[NDGPRequest alloc] initWithOperationType:operationType requestName:requestName parameters:parameters baseUrl:baseUrl requestUrl:requestUrl requestMethod:requestMethod];
     return request;
 }
 
@@ -104,6 +110,7 @@
     if (_gpRequestMethod) {
         return _gpRequestMethod;
     }
+    
     YTKRequestMethod gpRequestMethod = YTKRequestMethodPost;
     _gpRequestMethod = gpRequestMethod;
     return YTKRequestMethodPost;
@@ -113,6 +120,5 @@
 {
     return self.parameters;
 }
-
 
 @end
