@@ -17,8 +17,11 @@
 
 @property (nonatomic, strong) Class modelClass;
 
-// get cache
+@property (nonatomic, strong) id ndCacheModel;
+
+// get model
 - (id)model;
+
 
 // save cache
 - (BOOL)ndSaveObjectToDiskCache:(id)object;

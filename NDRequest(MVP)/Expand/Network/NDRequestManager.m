@@ -34,7 +34,7 @@
      }failure:^(YTKBaseRequest *request)
      {
          NSError *error = gpRequest.requestOperation.error;
-         id object = [gpRequest model];
+         id object = gpRequest.ndCacheModel;
          NDGPModel *model = (NDGPModel *)object;
          model.requestName = gpRequest.requestName;
          

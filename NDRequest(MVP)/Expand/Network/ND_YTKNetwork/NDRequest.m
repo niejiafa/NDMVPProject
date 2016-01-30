@@ -13,8 +13,6 @@
 
 @interface NDRequest()
 
-@property (nonatomic, strong) id ndCacheModel;
-
 @end
 
 @implementation NDRequest
@@ -84,11 +82,6 @@
 // get cache
 - (id)model
 {
-    if (self.ndCacheModel)
-    {
-        return self.ndCacheModel;
-    }
-    
     id model = [self ndConvertToModel:self.responseString];
     return model;
 }
