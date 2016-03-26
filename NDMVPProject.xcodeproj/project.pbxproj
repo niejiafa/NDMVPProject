@@ -25,7 +25,6 @@
 		7D4448E31CA6707E0030933F /* NDGPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BD1CA6707E0030933F /* NDGPModel.m */; };
 		7D4448E41CA6707E0030933F /* NDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BF1CA6707E0030933F /* NDModel.m */; };
 		7D4448E51CA6707E0030933F /* NDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C11CA6707E0030933F /* NDRequestManager.m */; };
-		7D4448E61CA6707E0030933F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D4448C21CA6707E0030933F /* Info.plist */; };
 		7D4448E71CA6707E0030933F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C31CA6707E0030933F /* main.m */; };
 		7D4448E81CA6707E0030933F /* NDAppBinaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */; };
 		7D4448E91CA6707E0030933F /* NDAppIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C91CA6707E0030933F /* NDAppIconModel.m */; };
@@ -300,7 +299,7 @@
 		7DA7BA0E1C34D93900472644 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0710;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = NDEducation;
 				TargetAttributes = {
 					7DA7BA151C34D93900472644 = {
@@ -334,7 +333,6 @@
 				7D4448D51CA6707E0030933F /* Assets.xcassets in Resources */,
 				7D4448D71CA6707E0030933F /* Main.storyboard in Resources */,
 				7D4448D61CA6707E0030933F /* LaunchScreen.storyboard in Resources */,
-				7D4448E61CA6707E0030933F /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
