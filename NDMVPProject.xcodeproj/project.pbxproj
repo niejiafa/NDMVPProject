@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D4448D41CA6707E0030933F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44489A1CA6707E0030933F /* AppDelegate.m */; };
-		7D4448D51CA6707E0030933F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489B1CA6707E0030933F /* Assets.xcassets */; };
-		7D4448D61CA6707E0030933F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */; };
-		7D4448D71CA6707E0030933F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489E1CA6707E0030933F /* Main.storyboard */; };
-		7D4448D81CA6707E0030933F /* NSArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A41CA6707E0030933F /* NSArray+ND.m */; };
-		7D4448D91CA6707E0030933F /* NSData+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A61CA6707E0030933F /* NSData+ND.m */; };
-		7D4448DA1CA6707E0030933F /* NSDate+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A81CA6707E0030933F /* NSDate+ND.m */; };
-		7D4448DB1CA6707E0030933F /* NSDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AA1CA6707E0030933F /* NSDictionary+ND.m */; };
-		7D4448DC1CA6707E0030933F /* NSFileManager+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AC1CA6707E0030933F /* NSFileManager+ND.m */; };
-		7D4448DD1CA6707E0030933F /* NSMutableArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AE1CA6707E0030933F /* NSMutableArray+ND.m */; };
-		7D4448DE1CA6707E0030933F /* NSMutableDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B01CA6707E0030933F /* NSMutableDictionary+ND.m */; };
-		7D4448DF1CA6707E0030933F /* NSString+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B21CA6707E0030933F /* NSString+ND.m */; };
-		7D4448E01CA6707E0030933F /* NSTimer+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B41CA6707E0030933F /* NSTimer+ND.m */; };
-		7D4448E11CA6707E0030933F /* NDGPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B81CA6707E0030933F /* NDGPRequest.m */; };
-		7D4448E21CA6707E0030933F /* NDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BA1CA6707E0030933F /* NDRequest.m */; };
-		7D4448E31CA6707E0030933F /* NDGPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BD1CA6707E0030933F /* NDGPModel.m */; };
-		7D4448E41CA6707E0030933F /* NDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BF1CA6707E0030933F /* NDModel.m */; };
-		7D4448E51CA6707E0030933F /* NDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C11CA6707E0030933F /* NDRequestManager.m */; };
-		7D4448E71CA6707E0030933F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C31CA6707E0030933F /* main.m */; };
-		7D4448E81CA6707E0030933F /* NDAppBinaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */; };
-		7D4448E91CA6707E0030933F /* NDAppIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C91CA6707E0030933F /* NDAppIconModel.m */; };
-		7D4448EA1CA6707E0030933F /* NDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CB1CA6707E0030933F /* NDAppModel.m */; };
-		7D4448EB1CA6707E0030933F /* NDPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CE1CA6707E0030933F /* NDPresenter.m */; };
-		7D4448EC1CA6707E0030933F /* NDMVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D11CA6707E0030933F /* NDMVPViewController.m */; };
-		7D4448ED1CA6707E0030933F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D31CA6707E0030933F /* ViewController.m */; };
-		C10EE5FAA951C9A301EFF4D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5678A2EC2DA9B4DFAA23A87F /* libPods.a */; };
+		7D4449171CA6785F0030933F /* NSDate+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A81CA6707E0030933F /* NSDate+ND.m */; };
+		7D4449181CA6785F0030933F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44489A1CA6707E0030933F /* AppDelegate.m */; };
+		7D4449191CA6785F0030933F /* NDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CB1CA6707E0030933F /* NDAppModel.m */; };
+		7D44491A1CA6785F0030933F /* NSDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AA1CA6707E0030933F /* NSDictionary+ND.m */; };
+		7D44491B1CA6785F0030933F /* NDAppBinaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */; };
+		7D44491C1CA6785F0030933F /* NDPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CE1CA6707E0030933F /* NDPresenter.m */; };
+		7D44491D1CA6785F0030933F /* NSTimer+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B41CA6707E0030933F /* NSTimer+ND.m */; };
+		7D44491E1CA6785F0030933F /* NDGPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BD1CA6707E0030933F /* NDGPModel.m */; };
+		7D44491F1CA6785F0030933F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C31CA6707E0030933F /* main.m */; };
+		7D4449201CA6785F0030933F /* NSString+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B21CA6707E0030933F /* NSString+ND.m */; };
+		7D4449211CA6785F0030933F /* NSArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A41CA6707E0030933F /* NSArray+ND.m */; };
+		7D4449221CA6785F0030933F /* NSMutableDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B01CA6707E0030933F /* NSMutableDictionary+ND.m */; };
+		7D4449231CA6785F0030933F /* NSData+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A61CA6707E0030933F /* NSData+ND.m */; };
+		7D4449241CA6785F0030933F /* NDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BA1CA6707E0030933F /* NDRequest.m */; };
+		7D4449251CA6785F0030933F /* NDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BF1CA6707E0030933F /* NDModel.m */; };
+		7D4449261CA6785F0030933F /* NSFileManager+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AC1CA6707E0030933F /* NSFileManager+ND.m */; };
+		7D4449271CA6785F0030933F /* NSMutableArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AE1CA6707E0030933F /* NSMutableArray+ND.m */; };
+		7D4449281CA6785F0030933F /* NDAppIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C91CA6707E0030933F /* NDAppIconModel.m */; };
+		7D4449291CA6785F0030933F /* NDMVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D11CA6707E0030933F /* NDMVPViewController.m */; };
+		7D44492A1CA6785F0030933F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D31CA6707E0030933F /* ViewController.m */; };
+		7D44492B1CA6785F0030933F /* NDGPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B81CA6707E0030933F /* NDGPRequest.m */; };
+		7D44492C1CA6785F0030933F /* NDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C11CA6707E0030933F /* NDRequestManager.m */; };
+		7D44492E1CA6785F0030933F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5678A2EC2DA9B4DFAA23A87F /* libPods.a */; };
+		7D4449301CA6785F0030933F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489B1CA6707E0030933F /* Assets.xcassets */; };
+		7D4449311CA6785F0030933F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489E1CA6707E0030933F /* Main.storyboard */; };
+		7D4449321CA6785F0030933F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,16 +85,17 @@
 		7D4448D11CA6707E0030933F /* NDMVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDMVPViewController.m; sourceTree = "<group>"; };
 		7D4448D21CA6707E0030933F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		7D4448D31CA6707E0030933F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		7DA7BA161C34D93900472644 /* NDMVPProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDMVPProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4449381CA6785F0030933F /* NDMVPProject copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NDMVPProject copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4449391CA6785F0030933F /* NDMVPProject copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "NDMVPProject copy-Info.plist"; path = "/Users/ndmac/Documents/NDEducation/NDMVPProject/NDMVPProject copy-Info.plist"; sourceTree = "<absolute>"; };
 		C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7DA7BA131C34D93900472644 /* Frameworks */ = {
+		7D44492D1CA6785F0030933F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C10EE5FAA951C9A301EFF4D9 /* libPods.a in Frameworks */,
+				7D44492E1CA6785F0030933F /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,17 +122,17 @@
 		7D4448981CA6707E0030933F /* NDMVPProject */ = {
 			isa = PBXGroup;
 			children = (
+				7D4448C41CA6707E0030933F /* MVPFunction */,
+				7D4448A01CA6707E0030933F /* Expand */,
 				7D4448991CA6707E0030933F /* AppDelegate.h */,
 				7D44489A1CA6707E0030933F /* AppDelegate.m */,
+				7D4448D21CA6707E0030933F /* ViewController.h */,
+				7D4448D31CA6707E0030933F /* ViewController.m */,
 				7D44489B1CA6707E0030933F /* Assets.xcassets */,
 				7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */,
 				7D44489E1CA6707E0030933F /* Main.storyboard */,
-				7D4448A01CA6707E0030933F /* Expand */,
 				7D4448C21CA6707E0030933F /* Info.plist */,
 				7D4448C31CA6707E0030933F /* main.m */,
-				7D4448C41CA6707E0030933F /* MVPFunction */,
-				7D4448D21CA6707E0030933F /* ViewController.h */,
-				7D4448D31CA6707E0030933F /* ViewController.m */,
 			);
 			path = NDMVPProject;
 			sourceTree = "<group>";
@@ -259,13 +260,14 @@
 				7DA7BA171C34D93900472644 /* Products */,
 				2E1047AA883F3D61E9CE4227 /* Pods */,
 				5EE1E8A8DBE06EB6DEE4155C /* Frameworks */,
+				7D4449391CA6785F0030933F /* NDMVPProject copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		7DA7BA171C34D93900472644 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7DA7BA161C34D93900472644 /* NDMVPProject.app */,
+				7D4449381CA6785F0030933F /* NDMVPProject copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -273,24 +275,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7DA7BA151C34D93900472644 /* NDMVPProject */ = {
+		7D4449141CA6785F0030933F /* NDMVPProject copy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7DA7BA431C34D93900472644 /* Build configuration list for PBXNativeTarget "NDMVPProject" */;
+			buildConfigurationList = 7D4449351CA6785F0030933F /* Build configuration list for PBXNativeTarget "NDMVPProject copy" */;
 			buildPhases = (
-				EE55F8FEF2EAFBA957F10B29 /* Check Pods Manifest.lock */,
-				7DA7BA121C34D93900472644 /* Sources */,
-				7DA7BA131C34D93900472644 /* Frameworks */,
-				7DA7BA141C34D93900472644 /* Resources */,
-				FCCD0673ABA8CB977321972E /* Embed Pods Frameworks */,
-				CF82E1BE62E047B8EF0609EC /* Copy Pods Resources */,
+				7D4449151CA6785F0030933F /* Check Pods Manifest.lock */,
+				7D4449161CA6785F0030933F /* Sources */,
+				7D44492D1CA6785F0030933F /* Frameworks */,
+				7D44492F1CA6785F0030933F /* Resources */,
+				7D4449331CA6785F0030933F /* Embed Pods Frameworks */,
+				7D4449341CA6785F0030933F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = NDMVPProject;
+			name = "NDMVPProject copy";
 			productName = "NDRequest(MVP)";
-			productReference = 7DA7BA161C34D93900472644 /* NDMVPProject.app */;
+			productReference = 7D4449381CA6785F0030933F /* NDMVPProject copy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -301,11 +303,6 @@
 			attributes = {
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = NDEducation;
-				TargetAttributes = {
-					7DA7BA151C34D93900472644 = {
-						CreatedOnToolsVersion = 7.1;
-					};
-				};
 			};
 			buildConfigurationList = 7DA7BA111C34D93900472644 /* Build configuration list for PBXProject "NDMVPProject" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,41 +317,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7DA7BA151C34D93900472644 /* NDMVPProject */,
+				7D4449141CA6785F0030933F /* NDMVPProject copy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7DA7BA141C34D93900472644 /* Resources */ = {
+		7D44492F1CA6785F0030933F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4448D51CA6707E0030933F /* Assets.xcassets in Resources */,
-				7D4448D71CA6707E0030933F /* Main.storyboard in Resources */,
-				7D4448D61CA6707E0030933F /* LaunchScreen.storyboard in Resources */,
+				7D4449301CA6785F0030933F /* Assets.xcassets in Resources */,
+				7D4449311CA6785F0030933F /* Main.storyboard in Resources */,
+				7D4449321CA6785F0030933F /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		CF82E1BE62E047B8EF0609EC /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE55F8FEF2EAFBA957F10B29 /* Check Pods Manifest.lock */ = {
+		7D4449151CA6785F0030933F /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -369,7 +351,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FCCD0673ABA8CB977321972E /* Embed Pods Frameworks */ = {
+		7D4449331CA6785F0030933F /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -384,35 +366,50 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		7D4449341CA6785F0030933F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7DA7BA121C34D93900472644 /* Sources */ = {
+		7D4449161CA6785F0030933F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4448DA1CA6707E0030933F /* NSDate+ND.m in Sources */,
-				7D4448D41CA6707E0030933F /* AppDelegate.m in Sources */,
-				7D4448EA1CA6707E0030933F /* NDAppModel.m in Sources */,
-				7D4448DB1CA6707E0030933F /* NSDictionary+ND.m in Sources */,
-				7D4448E81CA6707E0030933F /* NDAppBinaryModel.m in Sources */,
-				7D4448EB1CA6707E0030933F /* NDPresenter.m in Sources */,
-				7D4448E01CA6707E0030933F /* NSTimer+ND.m in Sources */,
-				7D4448E31CA6707E0030933F /* NDGPModel.m in Sources */,
-				7D4448E71CA6707E0030933F /* main.m in Sources */,
-				7D4448DF1CA6707E0030933F /* NSString+ND.m in Sources */,
-				7D4448D81CA6707E0030933F /* NSArray+ND.m in Sources */,
-				7D4448DE1CA6707E0030933F /* NSMutableDictionary+ND.m in Sources */,
-				7D4448D91CA6707E0030933F /* NSData+ND.m in Sources */,
-				7D4448E21CA6707E0030933F /* NDRequest.m in Sources */,
-				7D4448E41CA6707E0030933F /* NDModel.m in Sources */,
-				7D4448DC1CA6707E0030933F /* NSFileManager+ND.m in Sources */,
-				7D4448DD1CA6707E0030933F /* NSMutableArray+ND.m in Sources */,
-				7D4448E91CA6707E0030933F /* NDAppIconModel.m in Sources */,
-				7D4448EC1CA6707E0030933F /* NDMVPViewController.m in Sources */,
-				7D4448ED1CA6707E0030933F /* ViewController.m in Sources */,
-				7D4448E11CA6707E0030933F /* NDGPRequest.m in Sources */,
-				7D4448E51CA6707E0030933F /* NDRequestManager.m in Sources */,
+				7D4449171CA6785F0030933F /* NSDate+ND.m in Sources */,
+				7D4449181CA6785F0030933F /* AppDelegate.m in Sources */,
+				7D4449191CA6785F0030933F /* NDAppModel.m in Sources */,
+				7D44491A1CA6785F0030933F /* NSDictionary+ND.m in Sources */,
+				7D44491B1CA6785F0030933F /* NDAppBinaryModel.m in Sources */,
+				7D44491C1CA6785F0030933F /* NDPresenter.m in Sources */,
+				7D44491D1CA6785F0030933F /* NSTimer+ND.m in Sources */,
+				7D44491E1CA6785F0030933F /* NDGPModel.m in Sources */,
+				7D44491F1CA6785F0030933F /* main.m in Sources */,
+				7D4449201CA6785F0030933F /* NSString+ND.m in Sources */,
+				7D4449211CA6785F0030933F /* NSArray+ND.m in Sources */,
+				7D4449221CA6785F0030933F /* NSMutableDictionary+ND.m in Sources */,
+				7D4449231CA6785F0030933F /* NSData+ND.m in Sources */,
+				7D4449241CA6785F0030933F /* NDRequest.m in Sources */,
+				7D4449251CA6785F0030933F /* NDModel.m in Sources */,
+				7D4449261CA6785F0030933F /* NSFileManager+ND.m in Sources */,
+				7D4449271CA6785F0030933F /* NSMutableArray+ND.m in Sources */,
+				7D4449281CA6785F0030933F /* NDAppIconModel.m in Sources */,
+				7D4449291CA6785F0030933F /* NDMVPViewController.m in Sources */,
+				7D44492A1CA6785F0030933F /* ViewController.m in Sources */,
+				7D44492B1CA6785F0030933F /* NDGPRequest.m in Sources */,
+				7D44492C1CA6785F0030933F /* NDRequestManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +435,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7D4449361CA6785F0030933F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBA51AE654AE80681E227AE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NDMVPProject copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.education.nd.NDMVPProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7D4449371CA6785F0030933F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "NDMVPProject copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.education.nd.NDMVPProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		7DA7BA411C34D93900472644 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,47 +541,23 @@
 			};
 			name = Release;
 		};
-		7DA7BA441C34D93900472644 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BBA51AE654AE80681E227AE /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NDMVPProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.NDRequest-MVP-";
-				PRODUCT_NAME = NDMVPProject;
-			};
-			name = Debug;
-		};
-		7DA7BA451C34D93900472644 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NDMVPProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.NDRequest-MVP-";
-				PRODUCT_NAME = NDMVPProject;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7D4449351CA6785F0030933F /* Build configuration list for PBXNativeTarget "NDMVPProject copy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D4449361CA6785F0030933F /* Debug */,
+				7D4449371CA6785F0030933F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		7DA7BA111C34D93900472644 /* Build configuration list for PBXProject "NDMVPProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7DA7BA411C34D93900472644 /* Debug */,
 				7DA7BA421C34D93900472644 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7DA7BA431C34D93900472644 /* Build configuration list for PBXNativeTarget "NDMVPProject" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7DA7BA441C34D93900472644 /* Debug */,
-				7DA7BA451C34D93900472644 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
