@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D4448D41CA6707E0030933F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D44489A1CA6707E0030933F /* AppDelegate.m */; };
+		7D4448D51CA6707E0030933F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489B1CA6707E0030933F /* Assets.xcassets */; };
+		7D4448D61CA6707E0030933F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */; };
+		7D4448D71CA6707E0030933F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D44489E1CA6707E0030933F /* Main.storyboard */; };
+		7D4448D81CA6707E0030933F /* NSArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A41CA6707E0030933F /* NSArray+ND.m */; };
+		7D4448D91CA6707E0030933F /* NSData+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A61CA6707E0030933F /* NSData+ND.m */; };
+		7D4448DA1CA6707E0030933F /* NSDate+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448A81CA6707E0030933F /* NSDate+ND.m */; };
+		7D4448DB1CA6707E0030933F /* NSDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AA1CA6707E0030933F /* NSDictionary+ND.m */; };
+		7D4448DC1CA6707E0030933F /* NSFileManager+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AC1CA6707E0030933F /* NSFileManager+ND.m */; };
+		7D4448DD1CA6707E0030933F /* NSMutableArray+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448AE1CA6707E0030933F /* NSMutableArray+ND.m */; };
+		7D4448DE1CA6707E0030933F /* NSMutableDictionary+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B01CA6707E0030933F /* NSMutableDictionary+ND.m */; };
+		7D4448DF1CA6707E0030933F /* NSString+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B21CA6707E0030933F /* NSString+ND.m */; };
+		7D4448E01CA6707E0030933F /* NSTimer+ND.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B41CA6707E0030933F /* NSTimer+ND.m */; };
+		7D4448E11CA6707E0030933F /* NDGPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448B81CA6707E0030933F /* NDGPRequest.m */; };
+		7D4448E21CA6707E0030933F /* NDRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BA1CA6707E0030933F /* NDRequest.m */; };
+		7D4448E31CA6707E0030933F /* NDGPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BD1CA6707E0030933F /* NDGPModel.m */; };
+		7D4448E41CA6707E0030933F /* NDModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448BF1CA6707E0030933F /* NDModel.m */; };
+		7D4448E51CA6707E0030933F /* NDRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C11CA6707E0030933F /* NDRequestManager.m */; };
+		7D4448E61CA6707E0030933F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7D4448C21CA6707E0030933F /* Info.plist */; };
+		7D4448E71CA6707E0030933F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C31CA6707E0030933F /* main.m */; };
+		7D4448E81CA6707E0030933F /* NDAppBinaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */; };
+		7D4448E91CA6707E0030933F /* NDAppIconModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448C91CA6707E0030933F /* NDAppIconModel.m */; };
+		7D4448EA1CA6707E0030933F /* NDAppModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CB1CA6707E0030933F /* NDAppModel.m */; };
+		7D4448EB1CA6707E0030933F /* NDPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448CE1CA6707E0030933F /* NDPresenter.m */; };
+		7D4448EC1CA6707E0030933F /* NDMVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D11CA6707E0030933F /* NDMVPViewController.m */; };
+		7D4448ED1CA6707E0030933F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4448D31CA6707E0030933F /* ViewController.m */; };
+		C10EE5FAA951C9A301EFF4D9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5678A2EC2DA9B4DFAA23A87F /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2BBA51AE654AE80681E227AE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5678A2EC2DA9B4DFAA23A87F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D4448991CA6707E0030933F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7D44489A1CA6707E0030933F /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7D44489B1CA6707E0030933F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D44489D1CA6707E0030933F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7D44489F1CA6707E0030933F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7D4448A31CA6707E0030933F /* NSArray+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ND.h"; sourceTree = "<group>"; };
+		7D4448A41CA6707E0030933F /* NSArray+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ND.m"; sourceTree = "<group>"; };
+		7D4448A51CA6707E0030933F /* NSData+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ND.h"; sourceTree = "<group>"; };
+		7D4448A61CA6707E0030933F /* NSData+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ND.m"; sourceTree = "<group>"; };
+		7D4448A71CA6707E0030933F /* NSDate+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+ND.h"; sourceTree = "<group>"; };
+		7D4448A81CA6707E0030933F /* NSDate+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ND.m"; sourceTree = "<group>"; };
+		7D4448A91CA6707E0030933F /* NSDictionary+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+ND.h"; sourceTree = "<group>"; };
+		7D4448AA1CA6707E0030933F /* NSDictionary+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+ND.m"; sourceTree = "<group>"; };
+		7D4448AB1CA6707E0030933F /* NSFileManager+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+ND.h"; sourceTree = "<group>"; };
+		7D4448AC1CA6707E0030933F /* NSFileManager+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+ND.m"; sourceTree = "<group>"; };
+		7D4448AD1CA6707E0030933F /* NSMutableArray+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+ND.h"; sourceTree = "<group>"; };
+		7D4448AE1CA6707E0030933F /* NSMutableArray+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ND.m"; sourceTree = "<group>"; };
+		7D4448AF1CA6707E0030933F /* NSMutableDictionary+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+ND.h"; sourceTree = "<group>"; };
+		7D4448B01CA6707E0030933F /* NSMutableDictionary+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+ND.m"; sourceTree = "<group>"; };
+		7D4448B11CA6707E0030933F /* NSString+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ND.h"; sourceTree = "<group>"; };
+		7D4448B21CA6707E0030933F /* NSString+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ND.m"; sourceTree = "<group>"; };
+		7D4448B31CA6707E0030933F /* NSTimer+ND.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+ND.h"; sourceTree = "<group>"; };
+		7D4448B41CA6707E0030933F /* NSTimer+ND.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+ND.m"; sourceTree = "<group>"; };
+		7D4448B71CA6707E0030933F /* NDGPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGPRequest.h; sourceTree = "<group>"; };
+		7D4448B81CA6707E0030933F /* NDGPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGPRequest.m; sourceTree = "<group>"; };
+		7D4448B91CA6707E0030933F /* NDRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDRequest.h; sourceTree = "<group>"; };
+		7D4448BA1CA6707E0030933F /* NDRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDRequest.m; sourceTree = "<group>"; };
+		7D4448BC1CA6707E0030933F /* NDGPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDGPModel.h; sourceTree = "<group>"; };
+		7D4448BD1CA6707E0030933F /* NDGPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDGPModel.m; sourceTree = "<group>"; };
+		7D4448BE1CA6707E0030933F /* NDModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDModel.h; sourceTree = "<group>"; };
+		7D4448BF1CA6707E0030933F /* NDModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDModel.m; sourceTree = "<group>"; };
+		7D4448C01CA6707E0030933F /* NDRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDRequestManager.h; sourceTree = "<group>"; };
+		7D4448C11CA6707E0030933F /* NDRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDRequestManager.m; sourceTree = "<group>"; };
+		7D4448C21CA6707E0030933F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D4448C31CA6707E0030933F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7D4448C61CA6707E0030933F /* NDAppBinaryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppBinaryModel.h; sourceTree = "<group>"; };
+		7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppBinaryModel.m; sourceTree = "<group>"; };
+		7D4448C81CA6707E0030933F /* NDAppIconModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppIconModel.h; sourceTree = "<group>"; };
+		7D4448C91CA6707E0030933F /* NDAppIconModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppIconModel.m; sourceTree = "<group>"; };
+		7D4448CA1CA6707E0030933F /* NDAppModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDAppModel.h; sourceTree = "<group>"; };
+		7D4448CB1CA6707E0030933F /* NDAppModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDAppModel.m; sourceTree = "<group>"; };
+		7D4448CD1CA6707E0030933F /* NDPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDPresenter.h; sourceTree = "<group>"; };
+		7D4448CE1CA6707E0030933F /* NDPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDPresenter.m; sourceTree = "<group>"; };
+		7D4448D01CA6707E0030933F /* NDMVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NDMVPViewController.h; sourceTree = "<group>"; };
+		7D4448D11CA6707E0030933F /* NDMVPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NDMVPViewController.m; sourceTree = "<group>"; };
+		7D4448D21CA6707E0030933F /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7D4448D31CA6707E0030933F /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7DA7BA161C34D93900472644 /* NDMVPProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NDMVPProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7DA7BA131C34D93900472644 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10EE5FAA951C9A301EFF4D9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E1047AA883F3D61E9CE4227 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2BBA51AE654AE80681E227AE /* Pods.debug.xcconfig */,
+				C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5EE1E8A8DBE06EB6DEE4155C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5678A2EC2DA9B4DFAA23A87F /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D4448981CA6707E0030933F /* NDMVPProject */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448991CA6707E0030933F /* AppDelegate.h */,
+				7D44489A1CA6707E0030933F /* AppDelegate.m */,
+				7D44489B1CA6707E0030933F /* Assets.xcassets */,
+				7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */,
+				7D44489E1CA6707E0030933F /* Main.storyboard */,
+				7D4448A01CA6707E0030933F /* Expand */,
+				7D4448C21CA6707E0030933F /* Info.plist */,
+				7D4448C31CA6707E0030933F /* main.m */,
+				7D4448C41CA6707E0030933F /* MVPFunction */,
+				7D4448D21CA6707E0030933F /* ViewController.h */,
+				7D4448D31CA6707E0030933F /* ViewController.m */,
+			);
+			path = NDMVPProject;
+			sourceTree = "<group>";
+		};
+		7D4448A01CA6707E0030933F /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448A11CA6707E0030933F /* Category */,
+				7D4448B51CA6707E0030933F /* Network */,
+			);
+			path = Expand;
+			sourceTree = "<group>";
+		};
+		7D4448A11CA6707E0030933F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448A21CA6707E0030933F /* ND_SystemCategory */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		7D4448A21CA6707E0030933F /* ND_SystemCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448A31CA6707E0030933F /* NSArray+ND.h */,
+				7D4448A41CA6707E0030933F /* NSArray+ND.m */,
+				7D4448A51CA6707E0030933F /* NSData+ND.h */,
+				7D4448A61CA6707E0030933F /* NSData+ND.m */,
+				7D4448A71CA6707E0030933F /* NSDate+ND.h */,
+				7D4448A81CA6707E0030933F /* NSDate+ND.m */,
+				7D4448A91CA6707E0030933F /* NSDictionary+ND.h */,
+				7D4448AA1CA6707E0030933F /* NSDictionary+ND.m */,
+				7D4448AB1CA6707E0030933F /* NSFileManager+ND.h */,
+				7D4448AC1CA6707E0030933F /* NSFileManager+ND.m */,
+				7D4448AD1CA6707E0030933F /* NSMutableArray+ND.h */,
+				7D4448AE1CA6707E0030933F /* NSMutableArray+ND.m */,
+				7D4448AF1CA6707E0030933F /* NSMutableDictionary+ND.h */,
+				7D4448B01CA6707E0030933F /* NSMutableDictionary+ND.m */,
+				7D4448B11CA6707E0030933F /* NSString+ND.h */,
+				7D4448B21CA6707E0030933F /* NSString+ND.m */,
+				7D4448B31CA6707E0030933F /* NSTimer+ND.h */,
+				7D4448B41CA6707E0030933F /* NSTimer+ND.m */,
+			);
+			path = ND_SystemCategory;
+			sourceTree = "<group>";
+		};
+		7D4448B51CA6707E0030933F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448B61CA6707E0030933F /* ND_YTKNetwork */,
+				7D4448BB1CA6707E0030933F /* ND_YYModel */,
+				7D4448C01CA6707E0030933F /* NDRequestManager.h */,
+				7D4448C11CA6707E0030933F /* NDRequestManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7D4448B61CA6707E0030933F /* ND_YTKNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448B71CA6707E0030933F /* NDGPRequest.h */,
+				7D4448B81CA6707E0030933F /* NDGPRequest.m */,
+				7D4448B91CA6707E0030933F /* NDRequest.h */,
+				7D4448BA1CA6707E0030933F /* NDRequest.m */,
+			);
+			path = ND_YTKNetwork;
+			sourceTree = "<group>";
+		};
+		7D4448BB1CA6707E0030933F /* ND_YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448BC1CA6707E0030933F /* NDGPModel.h */,
+				7D4448BD1CA6707E0030933F /* NDGPModel.m */,
+				7D4448BE1CA6707E0030933F /* NDModel.h */,
+				7D4448BF1CA6707E0030933F /* NDModel.m */,
+			);
+			path = ND_YYModel;
+			sourceTree = "<group>";
+		};
+		7D4448C41CA6707E0030933F /* MVPFunction */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448C51CA6707E0030933F /* Model */,
+				7D4448CC1CA6707E0030933F /* Presenter */,
+				7D4448CF1CA6707E0030933F /* View */,
+			);
+			path = MVPFunction;
+			sourceTree = "<group>";
+		};
+		7D4448C51CA6707E0030933F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448C61CA6707E0030933F /* NDAppBinaryModel.h */,
+				7D4448C71CA6707E0030933F /* NDAppBinaryModel.m */,
+				7D4448C81CA6707E0030933F /* NDAppIconModel.h */,
+				7D4448C91CA6707E0030933F /* NDAppIconModel.m */,
+				7D4448CA1CA6707E0030933F /* NDAppModel.h */,
+				7D4448CB1CA6707E0030933F /* NDAppModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7D4448CC1CA6707E0030933F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448CD1CA6707E0030933F /* NDPresenter.h */,
+				7D4448CE1CA6707E0030933F /* NDPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7D4448CF1CA6707E0030933F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D4448D01CA6707E0030933F /* NDMVPViewController.h */,
+				7D4448D11CA6707E0030933F /* NDMVPViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7DA7BA0D1C34D93900472644 = {
+			isa = PBXGroup;
+			children = (
+				7D4448981CA6707E0030933F /* NDMVPProject */,
+				7DA7BA171C34D93900472644 /* Products */,
+				2E1047AA883F3D61E9CE4227 /* Pods */,
+				5EE1E8A8DBE06EB6DEE4155C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7DA7BA171C34D93900472644 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7DA7BA161C34D93900472644 /* NDMVPProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7DA7BA151C34D93900472644 /* NDMVPProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7DA7BA431C34D93900472644 /* Build configuration list for PBXNativeTarget "NDMVPProject" */;
+			buildPhases = (
+				EE55F8FEF2EAFBA957F10B29 /* Check Pods Manifest.lock */,
+				7DA7BA121C34D93900472644 /* Sources */,
+				7DA7BA131C34D93900472644 /* Frameworks */,
+				7DA7BA141C34D93900472644 /* Resources */,
+				FCCD0673ABA8CB977321972E /* Embed Pods Frameworks */,
+				CF82E1BE62E047B8EF0609EC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NDMVPProject;
+			productName = "NDRequest(MVP)";
+			productReference = 7DA7BA161C34D93900472644 /* NDMVPProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7DA7BA0E1C34D93900472644 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = NDEducation;
+				TargetAttributes = {
+					7DA7BA151C34D93900472644 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 7DA7BA111C34D93900472644 /* Build configuration list for PBXProject "NDMVPProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7DA7BA0D1C34D93900472644;
+			productRefGroup = 7DA7BA171C34D93900472644 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7DA7BA151C34D93900472644 /* NDMVPProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7DA7BA141C34D93900472644 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4448D51CA6707E0030933F /* Assets.xcassets in Resources */,
+				7D4448D71CA6707E0030933F /* Main.storyboard in Resources */,
+				7D4448D61CA6707E0030933F /* LaunchScreen.storyboard in Resources */,
+				7D4448E61CA6707E0030933F /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF82E1BE62E047B8EF0609EC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE55F8FEF2EAFBA957F10B29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FCCD0673ABA8CB977321972E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7DA7BA121C34D93900472644 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D4448DA1CA6707E0030933F /* NSDate+ND.m in Sources */,
+				7D4448D41CA6707E0030933F /* AppDelegate.m in Sources */,
+				7D4448EA1CA6707E0030933F /* NDAppModel.m in Sources */,
+				7D4448DB1CA6707E0030933F /* NSDictionary+ND.m in Sources */,
+				7D4448E81CA6707E0030933F /* NDAppBinaryModel.m in Sources */,
+				7D4448EB1CA6707E0030933F /* NDPresenter.m in Sources */,
+				7D4448E01CA6707E0030933F /* NSTimer+ND.m in Sources */,
+				7D4448E31CA6707E0030933F /* NDGPModel.m in Sources */,
+				7D4448E71CA6707E0030933F /* main.m in Sources */,
+				7D4448DF1CA6707E0030933F /* NSString+ND.m in Sources */,
+				7D4448D81CA6707E0030933F /* NSArray+ND.m in Sources */,
+				7D4448DE1CA6707E0030933F /* NSMutableDictionary+ND.m in Sources */,
+				7D4448D91CA6707E0030933F /* NSData+ND.m in Sources */,
+				7D4448E21CA6707E0030933F /* NDRequest.m in Sources */,
+				7D4448E41CA6707E0030933F /* NDModel.m in Sources */,
+				7D4448DC1CA6707E0030933F /* NSFileManager+ND.m in Sources */,
+				7D4448DD1CA6707E0030933F /* NSMutableArray+ND.m in Sources */,
+				7D4448E91CA6707E0030933F /* NDAppIconModel.m in Sources */,
+				7D4448EC1CA6707E0030933F /* NDMVPViewController.m in Sources */,
+				7D4448ED1CA6707E0030933F /* ViewController.m in Sources */,
+				7D4448E11CA6707E0030933F /* NDGPRequest.m in Sources */,
+				7D4448E51CA6707E0030933F /* NDRequestManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7D44489C1CA6707E0030933F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D44489D1CA6707E0030933F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		7D44489E1CA6707E0030933F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7D44489F1CA6707E0030933F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7DA7BA411C34D93900472644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7DA7BA421C34D93900472644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7DA7BA441C34D93900472644 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BBA51AE654AE80681E227AE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NDMVPProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.NDRequest-MVP-";
+				PRODUCT_NAME = NDMVPProject;
+			};
+			name = Debug;
+		};
+		7DA7BA451C34D93900472644 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6745EECCFA56EA139B5BE4B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = NDMVPProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.education.nd.NDRequest-MVP-";
+				PRODUCT_NAME = NDMVPProject;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7DA7BA111C34D93900472644 /* Build configuration list for PBXProject "NDMVPProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA7BA411C34D93900472644 /* Debug */,
+				7DA7BA421C34D93900472644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7DA7BA431C34D93900472644 /* Build configuration list for PBXNativeTarget "NDMVPProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7DA7BA441C34D93900472644 /* Debug */,
+				7DA7BA451C34D93900472644 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7DA7BA0E1C34D93900472644 /* Project object */;
+}

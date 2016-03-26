@@ -1,3 +1,3 @@
-# NDRequest-MVPProject
-* updating...
+# NDMVPProject
+* The demo of MVP
 
