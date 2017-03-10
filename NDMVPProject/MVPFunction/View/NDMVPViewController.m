@@ -22,9 +22,10 @@
 
 @implementation NDMVPViewController
 
-
 #pragma mark - life cycle
-- (void)viewDidLoad {
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     [self.presenter requestAppVersionsDataWithType:@"ios" Bundle_id:@"cn.com.xingze.yuto" Api_token:@"629b86afb6c99c130812337434110ef3"];
@@ -56,13 +57,16 @@
 
 #pragma mark - getter and setter
 
-- (NDPresenter *)presenter{
-    if (_presenter) {
+- (NDPresenter *)presenter
+{
+    if (_presenter)
+    {
         return _presenter;
     }
 
     _presenter = [[NDPresenter alloc] init];
     _presenter.delegate = self;
+    
     return _presenter;
 }
 

@@ -14,6 +14,8 @@
 
 @implementation NDPresenter
 
+#pragma mark - public
+
 - (void)requestAppVersionsDataWithType:(NSString *)type
                              Bundle_id:(NSString *)bundle_id
                              Api_token:(NSString *)api_token
